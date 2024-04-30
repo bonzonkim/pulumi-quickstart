@@ -31,14 +31,3 @@ const service = new k8s.core.v1.Service(appName, {
     selector: appLabels
   },
 });
-
-//const frontend = new k8s.core.v1.Service(appName, {
-//  metadata: { labels: deployment.spec.template.metadata.labels },
-//  spec: {
-//    type: "NodePort",
-//    ports: [{ port: 80, targetPort: 80, nodePort: 30202, protocol: "TCP" }],
-//    selector: appLabels,
-//  },
-//});
-
-//export const name = deployment.metadata.name;
