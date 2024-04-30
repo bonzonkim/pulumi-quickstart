@@ -1,0 +1,7 @@
+name: zabbix
+runtime: nodejs
+description: zabbix practice
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: ""
